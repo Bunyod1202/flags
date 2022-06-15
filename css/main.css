@@ -37,6 +37,7 @@ body {
   margin: 0;
   font-family: 'Nunito Sans' ,sans-serif ;
   background-color: #f2f2f2;
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .container {
   max-width: 1320px;
@@ -48,6 +49,7 @@ body {
 }
 .black .header {
 background-color:var(--main-card-color-dark) ;
+transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .header-inner {
   display: flex;
@@ -60,12 +62,16 @@ background-color:var(--main-card-color-dark) ;
   line-height: 33px;
   color: var(--main-color-text);
   margin: 0;
+  text-decoration: none;
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .black .title {
   color:var(--main-color-white);
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .black .header-inner .btn {
   color:var(--main-color-white);
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .black{
   background-color: #202C36;
@@ -76,9 +82,11 @@ background-color:var(--main-card-color-dark) ;
 .black .search-box input {
   background-color: var(--main-card-color-dark);
   color: var(--main-color-white);
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .black .search-box input::placeholder {
   color: var(--main-color-white);
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .black .search-box .selects::before {
 background-image: url("../images/Shapewhite.svg");
@@ -86,19 +94,23 @@ background-image: url("../images/Shapewhite.svg");
 .black .search-box .select {
   background-color: var(--main-card-color-dark);
   color: var(--main-color-white);
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .black .flag-item {
   background-color: var(--main-card-color-dark);
-
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .black  .ftag-item-bottom .title {
   color: var(--main-color-white);
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .black  .ftag-item-bottom .text {
   color: var(--main-color-white);
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .black  .ftag-item-bottom .text span {
   color: var(--main-color-white);
+  transition: background-color 0.5s linear,color 0.5s linear ;
 }
 .header-inner .btn {
   background-color:transparent ;
@@ -113,11 +125,14 @@ background-image: url("../images/Shapewhite.svg");
 .header-inner .btn::before {
   content: "";
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   background-image: url("../images/month.svg");
   margin-right: 10px;
-
+  background-repeat: no-repeat;
+}
+.black .header-inner .btn::before {
+background-image: url("../images/Group 3.svg");
 }
 .search-box {
   display: flex;
@@ -130,6 +145,8 @@ background-image: url("../images/Shapewhite.svg");
   padding: 18px 18px 18px 74px;
   border: 0;
   background-color:var(--main-color-white) ;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+border-radius: 5px;
 }
 .input {
 position: relative;
@@ -201,7 +218,6 @@ border-radius: 5px;
   padding: 0;
 }
 .flag-item {
-  width: 264px;
   background-color: var(--main-color-white);
   margin-bottom: 64px;
   border-radius: 5px;
@@ -230,4 +246,44 @@ border-radius: 5px;
     font-size: 14px;
     line-height: 16px;
     color: var(--main-color-text);
+  }
+  @media (max-width:560px) {
+    .header-inner {
+      justify-content: space-evenly;
+
+    }
+    .search-box {
+    display: block;
+
+    }
+    .search-box input {
+      width: 100%;
+    }
+    .search-box .selects {
+      width: 200px;
+      margin-top: 20px; 
+    }
+    .flag-item {
+    margin: 20px auto;
+    }
+  }
+  @media (max-width:830px) {
+    .header-inner {
+      justify-content: space-evenly;
+
+    }
+    .search-box {
+    display: block;
+
+    }
+    .search-box input {
+      width: 100%;
+    }
+    .search-box .selects {
+      width: 200px;
+      margin-top: 20px; 
+    }
+    .flag-item {
+    margin: 20px auto;
+    }
   }
