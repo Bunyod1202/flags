@@ -46,6 +46,7 @@ body {
 }
 .header {
   background-color: #ffffff;
+  box-shadow: 0px 2px 4px #0000000e;
 }
 .black .header {
 background-color:var(--main-card-color-dark) ;
