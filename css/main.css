@@ -205,7 +205,9 @@ border-radius: 5px;
     color: var(--main-color-text);
   }
 
-
+.margens {
+  margin-bottom: 50px;
+}
   .col-card {
     margin: 4% 0;
   }
