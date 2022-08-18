@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body >
+<body class="white">
   <header class="header">
     <div class="container">
       <div class="header-inner">
-      <h1 class="title">Where in the world?</h1>
-      <button class="btn" onclick="fon()">Dark Mode</button>
-    </div>
+        <h1 class="title">Where in the world?</h1>
+        <button class="btn" onclick="fon()">Dark Mode</button>
+      </div>
     </div>
   </header>
   <main>
@@ -158,8 +158,8 @@
   <script>
     function fon(){
       let white = document.querySelector(".white")
-      white.classList.add("black")
-  }
+      white.classList.toggle("black")
+    }
   </script>
 </body>
 </html>
