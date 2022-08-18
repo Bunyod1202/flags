@@ -5,29 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body class="white">
   <header class="header">
     <div class="container">
       <div class="header-inner">
-      <h1 class="title">Where in the world?</h1>
-      <button class="btn" onclick="fon()">Dark Mode</button>
-    </div>
+        <h1 class="title">Where in the world?</h1>
+        <button class="btn" onclick="fon()">Dark Mode</button>
+      </div>
     </div>
   </header>
   <main>
     <section class="hero">
       <div class="container">
-          <div class="search-box">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-9  col-xl-10">
             <div class="input">
               <input  type="search" placeholder="Search for a country…">
             </div>
-  
-            <div class="selects">
+          </div>
+          
+          <div class="col-12 col-sm-12 col-md-3 col-xl-2" >
+            <div class="selects ms-0">
               <select class="select" name="user-country">
                 <option  value="uzbekistan" selected="">Filter by Region</option>
-                <option value="usa">Africa</option>
+                <option value="usa">Africa</option> 
                 <option value="qatar">America</option>
                 <option value="dubai">Asia</option>
                 <option value="dubai">Europe</option>
@@ -35,17 +39,27 @@
               </select>
             </div>
           </div>
-          <ul class="flag-list">
-            <li class="flag-item">
-              <div class="ftag-item-top"><img src="./images/Germany.png" srcset="./images/Germany.png 1x, ./images/Germany@2x.png 2x" alt="flag"></div>
+        </div>
+        <div class="row g-5">
+          <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+            <div class="flag-item">
+              <a href="./product.html">
+              <div class="ftag-item-top">
+                <img src="./images/Germany.png" srcset="./images/Germany.png 1x, ./images/Germany@2x.png 2x" alt="flag">
+              </div>
               <div class="ftag-item-bottom">
                 <h2 class="title">Germany</h2>
                 <p class="text"> <span>Population:</span> 81,770,900</p>
                 <p class="text"> <span>Region:</span> Europe</p>
                 <p class="text"> <span>Capital:</span> Berlin</p>
               </div>
-            </li> 
-            <li class="flag-item">
+            </a>
+            </div>
+            
+          </div> 
+          <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+            <div class="flag-item">
+              <a href="./product.html">
               <div class="ftag-item-top"><img src="./images/swa.png" srcset="./images/swa.png 1x, ./images/swa@2x.png 2x" alt="flag"></div>
               <div class="ftag-item-bottom">
                 <h2 class="title">United States of America</h2>
@@ -53,8 +67,12 @@
                 <p class="text"> <span>Region:</span> Europe</p>
                 <p class="text"> <span>Capital:</span> Berlin</p>
               </div>
-            </li> 
-            <li class="flag-item">
+              </a>
+            </div>
+          </div> 
+          <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+            <div class="flag-item">
+              <a href="./product.html">
               <div class="ftag-item-top"><img src="./images/1280px-Flag_of_partugal.png" srcset="./images/1280px-Flag_of_partugal.png 1x, ./images/1280px-Flag_of_partugal@2x.png 2x" alt="flag"></div>
               <div class="ftag-item-bottom">
                 <h2 class="title">Brazil</h2>
@@ -62,8 +80,12 @@
                 <p class="text"> <span>Region:</span> Europe</p>
                 <p class="text"> <span>Capital:</span> Berlin</p>
               </div>
-            </li> 
-            <li class="flag-item">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+            <div class="flag-item">
+              <a href="./product.html">
               <div class="ftag-item-top"><img src="./images/includ.png" srcset="./images/includ.png 1x, ./images/includ@2x.png 2x" alt="flag"></div>
               <div class="ftag-item-bottom">
                 <h2 class="title">Iceland</h2>
@@ -71,8 +93,12 @@
                 <p class="text"> <span>Region:</span> Europe</p>
                 <p class="text"> <span>Capital:</span> Berlin</p>
               </div>
-            </li>
-            <li class="flag-item">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+            <div class="flag-item">
+              <a href="./product.html">
               <div class="ftag-item-top"><img src="./images/1280px-Flag_of_fransiya.svg.png" srcset="./images/1280px-Flag_of_fransiya.svg.png 1x, ./images/1280px-Flag_of_fransiya.svg@2x.png 2x" alt="flag"></div>
               <div class="ftag-item-bottom">
                 <h2 class="title">Afghanistan</h2>
@@ -80,8 +106,12 @@
                 <p class="text"> <span>Region:</span> Europe</p>
                 <p class="text"> <span>Capital:</span> Berlin</p>
               </div>
-            </li> 
-            <li class="flag-item">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+            <div class="flag-item">
+              <a href="./product.html">
               <div class="ftag-item-top"><img src="./images/Flag_of_italiya.svg.png" srcset="../images/Flag_of_italiya.svg.png 1x, ./images/1280px-Flag_of_italiya@2x.png 2x" alt="flag"></div>
               <div class="ftag-item-bottom">
                 <h2 class="title">Iceland</h2>
@@ -89,8 +119,13 @@
                 <p class="text"> <span>Region:</span> Europe</p>
                 <p class="text"> <span>Capital:</span> Berlin</p>
               </div>
-            </li>     
-            <li class="flag-item">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+            
+            <div class="flag-item">
+              <a href="./product.html">
               <div class="ftag-item-top"><img src="./images/1280px-Flag_of_Germany.svg.png" srcset="./images/1280px-Flag_of_Germany.svg.png 1x, ./images/1280px-Flag_of_Germany.svg@2x.png 2x" alt="flag"></div>
               <div class="ftag-item-bottom">
                 <h2 class="title">Albania</h2>
@@ -98,8 +133,12 @@
                 <p class="text"> <span>Region:</span> Europe</p>
                 <p class="text"> <span>Capital:</span> Berlin</p>
               </div>
-            </li>   
-            <li class="flag-item">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-xl-3">
+            <div class="flag-item">
+              <a href="./product.html">
               <div class="ftag-item-top"><img src="./images/Flag_of_Germany.svg.png" srcset="./images/Flag_of_Germany.svg.png 1x, ./images/Flag_of_Germany.svg@2x.png 2x" alt="flag"></div>
               <div class="ftag-item-bottom">
                 <h2 class="title">Algeria</h2>
@@ -107,16 +146,20 @@
                 <p class="text"> <span>Region:</span> Europe</p>
                 <p class="text"> <span>Capital:</span> Berlin</p>
               </div>
-            </li>    
-           </ul>
+              </a>
+            </div>
+          </div>
+          
+          
+        </div>
       </div>
     </section>
   </main>
   <script>
     function fon(){
       let white = document.querySelector(".white")
-      white.classList.add("black")
-  }
+      white.classList.toggle("black")
+    }
   </script>
 </body>
 </html>
